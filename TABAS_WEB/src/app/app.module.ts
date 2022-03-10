@@ -8,6 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { BagcartsComponent } from './bagcarts/bagcarts.component';
 import { BaggageComponent } from './baggage/baggage.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BaggageComponent } from './baggage/baggage.component';
     RegisterComponent,
     HomeComponent,
     BagcartsComponent,
-    BaggageComponent
+    BaggageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
