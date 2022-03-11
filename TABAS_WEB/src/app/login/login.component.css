@@ -24,6 +24,11 @@ h1{
     color: white;
 }
 
+
+::placeholder {
+    color: white; 
+  }
+
 .format input[type = "email"],
 .format input[type = "password"],
 .format button[type = "submit"]{
@@ -58,6 +63,7 @@ h1{
     width: 320px;
     height: 450px;
     margin-left: 40%;
+    border-radius: 24px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
