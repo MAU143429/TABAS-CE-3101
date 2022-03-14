@@ -19,7 +19,8 @@ body{
 
 }
 .container{
-  max-width: 1300px;
+  max-width: 1000px;
+  display: flex;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.295);
   padding: 25px 30px;
@@ -30,6 +31,13 @@ body{
   font-size: 25px;
   font-weight: 500;
   position: relative;
+  text-align: center;
+  
+  
+}
+
+.title{
+  margin-left: 200px;
 }
 .container .title::before{
   content: "";
@@ -41,15 +49,38 @@ body{
   border-radius: 25px;
   background: linear-gradient(135deg, #e7bb40, #e46c1c, #b12828);
   justify-content: center;
+  
 }
+
 .content form .user-details{
 
   justify-content: space-between;
   margin: 20px 0 12px 0;
 }
+
+.formatimg{
+
+  height: 600px;
+  width: 45%;
+  
+}
+
+.selectpicker{
+  margin-left: 50%;
+  background-color: transparent;
+  border-radius: 25px;
+  border: transparent;
+  
+}
+
+li {
+  list-style-type: none;
+}
+
 form .user-details .input-box{
   margin-bottom: 15px;
-  width: calc(100% / 2 - 20px);
+  margin-left: 15%;
+  width: calc(100% / (1/2) - 20px);
 }
 form .input-box span.details{
   display: block;
@@ -58,7 +89,7 @@ form .input-box span.details{
 }
 .user-details .input-box input{
   height: 45px;
-  width: 100%;
+  width: 50%;
   outline: none;
   font-size: 16px;
   border-radius: 25px;
@@ -106,12 +137,12 @@ form .input-box span.details{
  }
  form .button{
    height: 45px;
-   margin: 35px 0
+   margin: 40px 100px
  }
  form .button input{
    height: 100%;
    width: 100%;
-   border-radius: 5px;
+   border-radius: 25px;
    border: none;
    color: #fff;
    font-size: 18px;
@@ -120,6 +151,7 @@ form .input-box span.details{
    cursor: pointer;
    transition: all 0.3s ease;
    background: linear-gradient(135deg, #e7bb40, #e46c1c, #b12828);
+   margin-left: 40%;
  }
 
  form .button input:hover{

@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="baggage.component.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
+<app-navbar></app-navbar>
 <body>
   <div class="container">
-    <div class="title">Registro de maletas</div>
+    <img class="formatimg" src="https://media.discordapp.net/attachments/880202330178469899/953050667214340177/baggage.jpg">
     <div class="content">
+      <div class="title">Registro de maletas</div>
       <form action="#">
         <div class="user-details">
           <div class="input-box">
@@ -19,7 +21,6 @@
           <div class="input-box">
             <span class="details">Peso (kg)</span>
             <input type="text" placeholder="Ingrese el peso de la maleta" required>
-            <br>
           </div>
           <div class="input-box">
             <span class="details">Costo de envÍo ($)</span>
@@ -30,22 +31,18 @@
             <input type="text" placeholder="Ingrese el color de la maleta" required>
           </div>
         </div>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-              Dueño de la maleta
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item">Pablo Ugalde</a></li>
-              <li><a class="dropdown-item">Mario Casas</a></li>
-              <li><a class="dropdown-item">Gabriel Vargas</a></li>
-            </ul>
-        </li>
+        <select class="selectpicker" >
+          <option>Dueño de la maleta</option>
+          <option>Pablito Clavito</option>
+          <option>Pedro Perico</option>
+          <option>Maria Solano</option>
+        </select>        
         <div class="button">
-          <input type="submit" value="Registrar">
+          <input type="submit" value="Registrar Maleta">
         </div>
       </form>
     </div>
+    
   </div>
-
 </body>
 </html>
