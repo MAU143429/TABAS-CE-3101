@@ -8,9 +8,11 @@ body{
     margin: 0;
     height: 100%;
     width: 100%;
-    background-image: url("https://media.discordapp.net/attachments/880202330178469899/951199243769626704/fondo_login.jpg?width=720&height=405");
+    background-image: url("https://images.pexels.com/photos/1443894/pexels-photo-1443894.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-attachment: fixed;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
     
 }
 

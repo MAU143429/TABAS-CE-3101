@@ -1,1 +1,51 @@
-<p>baggage works!</p>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---Referencia al archivo css que contiene el estilo--->
+    <link rel="stylesheet" href="baggage.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Registro de maletas</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Número de Maleta</span>
+            <input type="text" placeholder="Ingrese el numero de maleta" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Peso (kg)</span>
+            <input type="text" placeholder="Ingrese el peso de la maleta" required>
+            <br>
+          </div>
+          <div class="input-box">
+            <span class="details">Costo de envÍo ($)</span>
+            <input type="text" placeholder="Ingrese el costo de envío" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Color de la maleta</span>
+            <input type="text" placeholder="Ingrese el color de la maleta" required>
+          </div>
+        </div>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              Dueño de la maleta
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item">Pablo Ugalde</a></li>
+              <li><a class="dropdown-item">Mario Casas</a></li>
+              <li><a class="dropdown-item">Gabriel Vargas</a></li>
+            </ul>
+        </li>
+        <div class="button">
+          <input type="submit" value="Registrar">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
