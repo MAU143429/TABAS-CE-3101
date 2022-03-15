@@ -5,40 +5,40 @@
     <!---Referencia al archivo css que contiene el estilo--->
     <link rel="stylesheet" href="bagcarts.component.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
    </head>
-   <app-navbar></app-navbar>
 <body>
+    <app-navbar></app-navbar>
     <div class="container">
         <div class="title">Asignacion de Bagcart a Vuelo</div>
         <div class="content">
-            <div class="flight-details">
-                <h5>Seleccione el Vuelo</h5><br>
-                <select class="selectpicker" >
-                    <option>Vuelos...</option>
-                    <option>MA-531 SJO-BVB</option>
-                    <option>KL-1792 SJO-PAR</option>
-                    <option>AF-1523 SJO-PAN</option> 
-                </select> 
+            <form >
+                <div class="flight-details">
+                    <h5>Seleccione el Vuelo</h5><br>
+                    <select class="selectpicker" >
+                        <option>Vuelos...</option>
+                        <option>MA-531 SJO-BVB</option>
+                        <option>KL-1792 SJO-PAR</option>
+                        <option>AF-1523 SJO-PAN</option> 
+                    </select> 
 
-            </div>
-
-            <div class="bagcart-details">
-                <h5>Seleccione el BagCart</h5><br>
-                <select class="selectpicker" >
-                    <option>BagCarts...</option>
-                    <option>Mercedes Benz AGM</option>
-                    <option>Volvo Kuruma</option>
-                    <option>Toyota Terios</option>
-                </select> 
-
-
-
-                <div class="button">
-                <input type="submit" value="Asignar">
                 </div>
-            
-            </div>
-        
+
+                <div class="bagcart-details">
+                    <h5>Seleccione el BagCart</h5><br>
+                    <select class="selectpicker" >
+                        <option>BagCarts...</option>
+                        <option>Mercedes Benz AGM</option>
+                        <option>Volvo Kuruma</option>
+                        <option>Toyota Terios</option>
+                    </select> 
+    
+                    <div class="button">
+                    <input type="submit" value="Asignar">
+                    </div>
+                
+                </div>
+            </form>
         </div>
     </div>
 </body>
