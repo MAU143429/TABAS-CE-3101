@@ -9,7 +9,10 @@ import { HomeComponent } from './home/home.component';
 import { BagcartsComponent } from './bagcarts/bagcarts.component';
 import { BaggageComponent } from './baggage/baggage.component';
 import { LoginComponent } from './login/login.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './navbar/navbar.component';  
+
+
+
 
 @NgModule({
   declarations: [
