@@ -2,17 +2,15 @@
 {
     public class Trabajador
     {
-        private string nombre { get; set; }
-        private string apellidos { get; set; }
-        private int cedula { get; set; }
-        private string rol { get; set; }
+        public int id { get; set; }
+        public string nombre { get; set; }
+        public string apellidos { get; set; }
+        public int cedula { get; set; }
+        public string rol { get; set; }
 
-        public Trabajador()
+        public Trabajador(int id, string nombre, string apellidos, int cedula, string rol)
         {
-        }
-
-        public Trabajador(string nombre, string apellidos, int cedula, string rol)
-        {
+            this.id = id;
             this.nombre = nombre;
             this.apellidos = apellidos;
             this.cedula = cedula;
