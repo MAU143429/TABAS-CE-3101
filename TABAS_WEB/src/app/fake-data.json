@@ -1,0 +1,56 @@
+[
+    {
+      "id_number" : "BNF1453",
+      "type": "Airbus A380 Jumbo",
+      "capacity": "160 pasajeros",
+      "t_baggage" : "300 maletas",
+      "bagcarts" : "174 maletas",
+      "inairplane" : "187 maletas",
+      "rejected" : "3 maletas"
+    },
+    {
+      "id_number" : "XMG8899",
+      "type": "Boeing 777",
+      "capacity": "230 pasajeros",
+      "t_baggage" : "350 maletas",
+      "bagcarts" : "156 maletas",
+      "inairplane" : "156 maletas",
+      "rejected" : "0 maletas"
+    },
+    {
+      "id_number" : "JFF9867",
+      "type": "Airbus A330",
+      "capacity": "200 pasajeros",
+      "t_baggage" : "250 maletas",
+      "bagcarts" : "274 maletas",
+      "inairplane" : "187 maletas",
+      "rejected" : "17 maletas"
+    },
+    {
+      "id_number" : "BA2490",
+      "type": "Airbus A321",
+      "capacity": "220 pasajeros",
+      "t_baggage" : "100 maletas",
+      "bagcarts" : "80 maletas",
+      "inairplane" : "99 maletas",
+      "rejected" : "1 maletas"
+    },
+    {
+      "id_number" : "XML4554",
+      "type": "Boeing 787",
+      "capacity": "180 pasajeros",
+      "t_baggage" : "114 maletas",
+      "bagcarts" : "64 maletas",
+      "inairplane" : "50 maletas",
+      "rejected" : "0 maletas"
+    },
+    {
+      "id_number" : " BA2491A",
+      "type": "Airbus A320",
+      "capacity": "144 pasajeros",
+      "t_baggage" : "300 maletas",
+      "bagcarts" : "274 maletas",
+      "inairplane" : "187 maletas",
+      "rejected" : "3 maletas"
+    }
+  ]

@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+      <div id="htmlData">
+        <h2>Reporte de Conciliación de Maletas</h2>
+        <table class="table table-bordered mt-4">
+          <tr class="table-primary">
+            <th>Número de Vuelo</th>
+            <th>Tipo de Avion</th>
+            <th>Capacidad</th>
+            <th>Total de Maletas del Vuelo</th>
+            <th>Cantidad de maletas en BagCarts</th>
+            <th>Total de Maletas en el avión</th>
+            <th>Total de Maletas Rechazadas</th>
+          </tr>
+          <tr *ngFor="let data of Data">
+            <th>{{data.id_number}}</th>
+            <td>{{data.type}}</td>
+            <td>{{data.capacity}}</td>
+            <td>{{data.t_baggage}}</td>
+            <td>{{data.bagcarts}}</td>
+            <td>{{data.inairplane}}</td>
+            <td>{{data.rejected}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div>
+    <button class="btn col col-lg-4 btn-block ml-4 btnformat" (click)="downloadGeneralReport()">Download PDF</button>
+  </div>
