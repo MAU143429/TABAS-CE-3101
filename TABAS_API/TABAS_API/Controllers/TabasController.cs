@@ -34,7 +34,7 @@ namespace TABAS_API.Controllers
         }
 
         // POST api/<TabasController>
-        [HttpPost]
+        [HttpPost("AddUser")]
         public List<Trabajador> Post(string nombre, string apellidos, int cedula, string rol)
         {
             int id = trabajadores.Last().id + 1;

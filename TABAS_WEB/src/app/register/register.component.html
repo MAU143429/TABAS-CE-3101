@@ -10,7 +10,7 @@
   <div class="container">
     <div class="title">Registro</div>
     <div class="content">
-      <form method="post" action="api/Tabas">
+      <form method="post" action="api/Tabas/AddUser">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Nombre</span>
@@ -58,7 +58,7 @@
           </div>
         </div>
         <div class="button">
-          <input type="submit" value="Registrarse">
+          <input type="submit" value="Registrarse" (click)="createUser(newUser)">
         </div>
       </form>
     </div>

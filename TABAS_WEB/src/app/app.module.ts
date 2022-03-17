@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BillingComponent } from './billing/billing.component';
 import { ConciliationComponent } from './conciliation/conciliation.component';
+import { FormsModule } from '@angular/forms';
+import { Users } from './model/users';
 
 
 
@@ -31,7 +33,8 @@ import { ConciliationComponent } from './conciliation/conciliation.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
