@@ -8,7 +8,7 @@ import { Info } from '../model/info.interface'
   providedIn: 'root'
 })
 export class UserService {
-  url = 'http://localhost:4200/api/Tabas'
+  url = 'https://localhost:7027/api/Tabas'
   constructor(private httpclient:HttpClient) { }
 
   //GET

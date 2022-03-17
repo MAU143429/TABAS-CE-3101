@@ -18,6 +18,7 @@ export class ConciliationComponent implements OnInit {
 
   ngOnInit(): void {
     this.userSvc.getVuelos().subscribe( data => (this.fullData = data));
+    console.log("ME EJECUTE");
   }
 
   public downloadGeneralReport(){
