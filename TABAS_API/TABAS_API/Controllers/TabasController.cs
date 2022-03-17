@@ -12,10 +12,10 @@ namespace TABAS_API.Controllers
         string viajes = System.IO.File.ReadAllText("Models/Vuelos.json");
         List<Trabajador> trabajadores = new List<Trabajador>
         {
-            new Trabajador(1, "Gabriel", "Vargas", 123456789, "Novato"),
-            new Trabajador(2, "Yendry", "Badilla", 123456789, "Jefe"),
-            new Trabajador(3, "Mauricio", "Calderón", 123456789, "Jefe"),
-            new Trabajador(4, "Victor", "Castrillo", 123456789, "Novato")
+            new Trabajador(1, "Gabriel", "Vargas", 123456789, "example@gmail.com", 84659213, "Novato"),
+            new Trabajador(2, "Yendry", "Badilla", 123456789, "example@hotmail.com", 86795135, "Jefe"),
+            new Trabajador(3, "Mauricio", "Calderón", 123456789, "example@yahoo.com", 84371197, "Jefe"),
+            new Trabajador(4, "Victor", "Castrillo", 123456789, "example@estudiantec.com", 88267599, "Novato")
         };
 
         // GET: api/<TabasController>
@@ -34,11 +34,11 @@ namespace TABAS_API.Controllers
         }
 
         // POST api/<TabasController>
-        [HttpPost("AddUser")]
-        public List<Trabajador> Post(string nombre, string apellidos, int cedula, string rol)
+        [HttpPost]
+        public List<Trabajador> Post(string nombre, string apellidos, long cedula, string correo, long telefono, string rol)
         {
             int id = trabajadores.Last().id + 1;
-            Trabajador trabajador = new Trabajador(id, nombre, apellidos, cedula, rol);
+            Trabajador trabajador = new Trabajador(id, nombre, apellidos, cedula, correo, telefono, rol);
             trabajadores.Add(trabajador);
             return trabajadores;
             //return trabajadores;
