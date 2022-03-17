@@ -1,0 +1,66 @@
+.factura {
+    table-layout: fixed;
+  }
+  
+  .fact-info > div > h5 {
+    font-weight: bold;
+  }
+  
+  .factura > thead {
+    border-top: solid 3px #000;
+    border-bottom: 3px solid #000;
+  }
+  
+  .factura > thead > tr > th:nth-child(2), .factura > tbod > tr > td:nth-child(2) {
+    width: 300px;
+  }
+  
+  .factura > thead > tr > th:nth-child(n+3) {
+    text-align: right;
+  }
+  
+  .factura > tbody > tr > td:nth-child(n+3) {
+    text-align: right;
+  }
+  
+  .factura > tfoot > tr > th, .factura > tfoot > tr > th:nth-child(n+3) {
+    font-size: 24px;
+    text-align: right;
+  }
+  
+  .cond {
+    border-top: solid 2px #000;
+  }
+
+  .formapp{
+      margin-left: 1%;
+  }
+
+  .imgformat{
+
+    width: 10%;
+    height: 10%;
+    
+  } 
+
+h2{
+    text-align: center;
+}
+.btnformat{
+    width: 25%;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #e7bb40, #e46c1c, #b12828);
+    margin-left: 36%; 
+ }
+ 
+ .btnformat:hover{
+     /* transform: scale(0.99); */
+     background: linear-gradient(-135deg, #e7bb40, #e46c1c, #b12828);
+ }

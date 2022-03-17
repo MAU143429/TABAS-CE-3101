@@ -27,11 +27,11 @@
                 <br>
                 <div class="bagcart-details">
                     <h5>Seleccione el BagCart</h5><br>
-                    <select class="selectpicker" >
+                    <select class="selectpicker" *ngFor="let bagcart of bagcartName">
                         <option>BagCarts...</option>
-                        <option>Mercedes Benz AGM</option>
-                        <option>Volvo Kuruma</option>
-                        <option>Toyota Terios</option>
+                        <option>{{bagcart.bagcart1}}</option>
+                        <option>{{bagcart.bagcart2}}</option>
+                        <option>{{bagcart.bagcart3}}</option>
                     </select> 
     
                     <div class="button">
