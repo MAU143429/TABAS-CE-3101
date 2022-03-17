@@ -1,1 +1,71 @@
-<p>register works!</p>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---Referencia al archivo css que contiene el estilo--->
+    <link rel="stylesheet" href="register.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Registro</div>
+    <div class="content">
+      <form method="post" action="api/Tabas">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nombre</span>
+            <input type="text" placeholder="Ingrese su nombre" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Apellidos</span>
+            <input type="text" placeholder="Ingrese sus apellidos" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Cédula</span>
+            <input type="text" placeholder="Ingrese su número de cédula" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Teléfono</span>
+            <input type="text" placeholder="Ingrese su número de teléfono" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Correo</span>
+            <input type="email" placeholder="Ingrese su correo" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Contraseña</span>
+            <input type="password" placeholder="Ingrese una contraseña" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Rol</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Recepcionista</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Escaner</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Embarcador</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Registrarse">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+

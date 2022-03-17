@@ -1,1 +1,49 @@
-<p>baggage works!</p>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---Referencia al archivo css que contiene el estilo--->
+    <link rel="stylesheet" href="baggage.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+<body>
+  <app-navbar></app-navbar>
+  <div class="container">
+    <img class="formatimg" src="https://media.discordapp.net/attachments/880202330178469899/953050667214340177/baggage.jpg">
+    <div class="content">
+      <div class="title">Registro de maletas</div>
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Número de Maleta</span>
+            <input type="text" placeholder="Ingrese el numero de maleta" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Peso (kg)</span>
+            <input type="text" placeholder="Ingrese el peso de la maleta" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Costo de envÍo ($)</span>
+            <input type="text" placeholder="Ingrese el costo de envío" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Color de la maleta</span>
+            <input type="text" placeholder="Ingrese el color de la maleta" required>
+          </div>
+        </div>
+        <select class="selectpicker" >
+          <option>Dueño de la maleta</option>
+          <option>Pablito Clavito</option>
+          <option>Pedro Perico</option>
+          <option>Maria Solano</option>
+        </select>        
+        <div class="button">
+          <input type="submit" value="Registrar Maleta">
+        </div>
+      </form>
+    </div>
+    
+  </div>
+</body>
+</html>
