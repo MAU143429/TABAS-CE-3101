@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { jsPDF } from "jspdf";
 import html2canvas from 'html2canvas';
 import BaggageInfoData from '../fake-data.json';
+import { UserService } from '../service/user.service';
+import { Info } from '../model/info.interface';
 
 @Component({
   selector: 'app-conciliation',
@@ -10,14 +12,15 @@ import BaggageInfoData from '../fake-data.json';
 })
 export class ConciliationComponent implements OnInit {
 
-  constructor() { }
+  fullData: Info[] | undefined;
 
-  Data = BaggageInfoData;
+  constructor(private userSvc: UserService) { }
 
   ngOnInit(): void {
+    this.userSvc.getVuelos().subscribe( data => (this.fullData = data));
   }
 
-  public downloadGeneralReport() {
+  public downloadGeneralReport(){
     // Extraemos el
     const DATA: any = document.getElementById('htmlData');
     const doc = new jsPDF('p', 'pt', 'a4');
