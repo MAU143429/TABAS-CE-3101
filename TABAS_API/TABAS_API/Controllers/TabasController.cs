@@ -9,7 +9,7 @@ namespace TABAS_API.Controllers
     [ApiController]
     public class TabasController : ControllerBase
     {
-
+        string viajes = System.IO.File.ReadAllText("Models/Vuelos.json");
         List<Trabajador> trabajadores = new List<Trabajador>
         {
             new Trabajador(1, "Gabriel", "Vargas", 123456789, "Novato"),
@@ -19,14 +19,14 @@ namespace TABAS_API.Controllers
         };
 
         // GET: api/<TabasController>
-        [HttpGet]
-        public List<Trabajador> Get()
+        [HttpGet("GetVuelos")]
+        public string Get()
         {
-            return trabajadores;
+            return viajes;
         }
 
         // GET api/<TabasController>/5
-        [HttpGet("{id}")]
+        [HttpGet]
         public Trabajador Get(int id)
         {
             Trabajador trabajador = trabajadores.Find(t => t.id == id);
@@ -40,7 +40,7 @@ namespace TABAS_API.Controllers
             int id = trabajadores.Last().id + 1;
             Trabajador trabajador = new Trabajador(id, nombre, apellidos, cedula, rol);
             trabajadores.Add(trabajador);
-            return Get();
+            return trabajadores;
             //return trabajadores;
 
         }
