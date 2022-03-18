@@ -20,7 +20,7 @@ export class ConciliationComponent implements OnInit {
     this.userSvc.getVuelos().subscribe( data => (this.fullData = data));
     
   }
-
+  // metodo que realiza la descarga del archivo del reporte de conciliacion de maletas
   public downloadGeneralReport(){
     // Extraemos el
     const DATA: any = document.getElementById('htmlData');

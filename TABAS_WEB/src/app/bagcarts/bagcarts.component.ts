@@ -15,6 +15,8 @@ export class BagcartsComponent implements OnInit {
 
 
   ngOnInit(): void {
+    /* Se utiliza el user service para realizar la solicitud GET para obtener
+    los BagCarts disponibles para mostrar en el menu de seleccion de esta seccion*/
     this.userSvc.getBagcart().subscribe( data => (this.bagcartName = data));
   }
 

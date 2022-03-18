@@ -12,7 +12,7 @@ export class BillingComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  // metodo que realiza la descarga del archivo de factura
   public downloadBillingReport(){
     // Extraemos el
     const DATA: any = document.getElementById('htmlData2');
