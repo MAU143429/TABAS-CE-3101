@@ -9,14 +9,19 @@ import { UserService } from '../service/user.service';
 })
 export class BagcartsComponent implements OnInit {
 
-  bagcartName: Bagcart[] | any;
+  /**
+    * Se define una propiedad que nos permitira almacenar la informacion proveniente del get
+    */
+  bagcartName: Bagcart | any;
 
   constructor(private userSvc: UserService) { }
 
 
   ngOnInit(): void {
-    /* Se utiliza el user service para realizar la solicitud GET para obtener
-    los BagCarts disponibles para mostrar en el menu de seleccion de esta seccion*/
+    /**
+    * Se utiliza la entidad privada de servicios para realizar el get de los nombres de los bagcarts
+    * y mostrarlos en el menu de seleccion. 
+    */
     this.userSvc.getBagcart().subscribe( data => (this.bagcartName = data));
   }
 

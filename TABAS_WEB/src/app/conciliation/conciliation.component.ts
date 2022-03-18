@@ -22,7 +22,7 @@ export class ConciliationComponent implements OnInit {
   }
   // metodo que realiza la descarga del archivo del reporte de conciliacion de maletas
   public downloadGeneralReport(){
-    // Extraemos el
+    // Extraemos el archivo
     const DATA: any = document.getElementById('htmlData');
     const doc = new jsPDF('p', 'pt', 'a4');
     const options = {
@@ -33,7 +33,7 @@ export class ConciliationComponent implements OnInit {
 
       const img = canvas.toDataURL('image/PNG');
 
-      // Add image Canvas to PDF
+      // Se agrega la imagen creada al PDF
       const bufferX = 15;
       const bufferY = 15;
       const imgProps = (doc as any).getImageProperties(img);

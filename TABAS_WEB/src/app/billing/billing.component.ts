@@ -14,7 +14,7 @@ export class BillingComponent implements OnInit {
   }
   // metodo que realiza la descarga del archivo de factura
   public downloadBillingReport(){
-    // Extraemos el
+    // Extraemos el archivo
     const DATA: any = document.getElementById('htmlData2');
     const doc = new jsPDF('p', 'pt', 'a4');
     const options = {
@@ -25,7 +25,7 @@ export class BillingComponent implements OnInit {
 
       const img = canvas.toDataURL('image/PNG');
 
-      // Add image Canvas to PDF
+      // Creamos una imagen con el canva HTML y creamos un PDF con esa imagem
       const bufferX = 15;
       const bufferY = 15;
       const imgProps = (doc as any).getImageProperties(img);
