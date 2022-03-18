@@ -10,55 +10,55 @@
   <div class="container">
     <div class="title">Registro</div>
     <div class="content">
-      <form method="post" action="api/Tabas/AddUser">
+      <form>
         <div class="user-details">
           <div class="input-box">
             <span class="details">Nombre</span>
-            <input type="text" placeholder="Ingrese su nombre" required>
+            <input type="text" [(ngModel)]="newUser.nombre" [ngModelOptions]="{standalone: true}" placeholder="Ingrese su nombre" required>
           </div>
           <div class="input-box">
             <span class="details">Apellidos</span>
-            <input type="text" placeholder="Ingrese sus apellidos" required>
+            <input type="text" [(ngModel)]="newUser.apellidos" [ngModelOptions]="{standalone: true}" placeholder="Ingrese sus apellidos" required>
           </div>
           <div class="input-box">
             <span class="details">Cédula</span>
-            <input type="text" placeholder="Ingrese su número de cédula" required>
+            <input type="text" [(ngModel)]="newUser.cedula" [ngModelOptions]="{standalone: true}" placeholder="Ingrese su número de cédula" required>
           </div>
           <div class="input-box">
             <span class="details">Teléfono</span>
-            <input type="text" placeholder="Ingrese su número de teléfono" required>
+            <input type="text" [(ngModel)]="newUser.telefono" [ngModelOptions]="{standalone: true}" placeholder="Ingrese su número de teléfono" required>
           </div>
           <div class="input-box">
             <span class="details">Correo</span>
-            <input type="email" placeholder="Ingrese su correo" required>
+            <input type="email" [(ngModel)]="newUser.correo" [ngModelOptions]="{standalone: true}" placeholder="Ingrese su correo" required>
           </div>
           <div class="input-box">
             <span class="details">Contraseña</span>
-            <input type="password" placeholder="Ingrese una contraseña" required>
+            <input type="password" [(ngModel)]="newUser.contrasena" [ngModelOptions]="{standalone: true}" placeholder="Ingrese una contraseña" required>
           </div>
         </div>
-        <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">Rol</span>
+        <div class="rol-details">
+          <input type="radio" [(ngModel)]="newUser.rol" name="rol" id="dot-1">
+          <input type="radio" [(ngModel)]="newUser.rol" name="rol" id="dot-2">
+          <input type="radio" [(ngModel)]="newUser.rol" name="rol" id="dot-3">
+          <span class="rol-title">Rol</span>
           <div class="category">
             <label for="dot-1">
             <span class="dot one"></span>
-            <span class="gender">Recepcionista</span>
+            <span class="rol">Recepcionista</span>
           </label>
           <label for="dot-2">
             <span class="dot two"></span>
-            <span class="gender">Escaner</span>
+            <span class="rol">Escaner</span>
           </label>
           <label for="dot-3">
             <span class="dot three"></span>
-            <span class="gender">Embarcador</span>
+            <span class="rol">Embarcador</span>
             </label>
           </div>
         </div>
         <div class="button">
-          <input type="submit" value="Registrarse" (click)="createUser(newUser)">
+          <input type="submit" value="Registrarse" (click)="addNewUser(newUser)">
         </div>
       </form>
     </div>

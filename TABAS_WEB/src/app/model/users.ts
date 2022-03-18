@@ -5,6 +5,7 @@ export class Users {
     cedula:number = 0
     correo:string = ''
     telefono:number = 0
+    contrasena:string = ''
     rol:string = ''
 }
 

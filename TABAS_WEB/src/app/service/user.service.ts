@@ -21,10 +21,26 @@ export class UserService {
   getBagcart():Observable<Bagcart>{
     return this.httpclient.get<Bagcart>(this.url+'/GetBagcart')
   }
-
+  
   //POST
-  addUser(user:Users):Observable<any>{
-    return this.httpclient.post(this.url+'/AddUser', user)
-  }
-
+  addUser(employee:any):Observable<any>{
+    const params = {
+      "id" : 0,
+      "nombre": employee.nombre,
+      "apellidos": employee.apellidos,
+      "cedula": employee.cedula,
+      "correo": employee.correo,
+      "telefono": employee.telefono,
+      "contrasena": employee.contrasena,
+      "rol": "recepcionista" 
+    }
+    console.log(employee)
+    employee.rol = "recepcionista"
+    return this.httpclient.post(this.url+'/AddEmployee', employee)
+}
+  /*
+  //PRUEBA POST
+  testUser(){
+    return this.httpclient.post<Users>(this.url+'/AddEmployee', 'Successful post')
+  }*/
 }

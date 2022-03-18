@@ -71,7 +71,7 @@ form .input-box span.details{
 .user-details .input-box input:valid{
   border-color: #d86625;
 }
- form .gender-details .gender-title{
+ form .rol-details .rol-title{
   font-size: 20px;
   font-weight: 500;
  }

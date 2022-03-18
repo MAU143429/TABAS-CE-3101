@@ -9,7 +9,7 @@ import { UserService } from '../service/user.service';
 })
 export class BagcartsComponent implements OnInit {
 
-  bagcartName: Bagcart | any;
+  bagcartName: Bagcart[] | any;
 
   constructor(private userSvc: UserService) { }
 

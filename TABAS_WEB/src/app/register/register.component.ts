@@ -15,10 +15,8 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  createUser(newUser:Users){
-    this.service.addUser(newUser).subscribe(()=>{
-      this.router.navigate(['/'])
-    },()=>alert("Error al crear nuevo usuario"))
+  addNewUser(newUser:Users){
+    this.service.addUser(newUser).subscribe(user=> console.log(user));
   }
 
 }
