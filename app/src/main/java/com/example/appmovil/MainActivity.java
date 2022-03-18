@@ -12,7 +12,11 @@ import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
+    private String user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +32,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (username.getText().toString().equals("admin") && password.getText().toString().equals("test")) {
+                    user = username.getText().toString();
                     login();
                 } else {
-                    Toast.makeText(MainActivity.this, "Login failed!", Toast.LENGTH_SHORT);
+                    Toast.makeText(MainActivity.this, "Fallo de inicio de sesión", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -38,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void login() {
         Intent intent = new Intent(this, Home.class);
+        intent.putExtra("user", user);
         startActivity(intent);
-        finish();
     }
 }
