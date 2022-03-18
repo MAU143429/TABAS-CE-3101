@@ -1,3 +1,4 @@
+// En este archivo se realizan todos los imports necesarios para crear la pagina web y su funcionalidad
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule} from '@angular/common/http';

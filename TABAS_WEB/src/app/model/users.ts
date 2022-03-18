@@ -1,3 +1,4 @@
+// Estructura o Modelo del Usuario que se registra
 export class Users {
     id:number = 0
     nombre:string = ''

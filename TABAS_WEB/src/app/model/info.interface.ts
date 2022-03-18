@@ -1,3 +1,4 @@
+// Interfaz con la estructura de los datos necesarios para crear las solicitudes GET
 export interface Info{
     id_number:string;
     type:string;
